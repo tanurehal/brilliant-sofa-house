@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    height: 40px; 
+}
+.navbar ul{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.navbar ul li {
+    list-style: none;
+    margin-right: 20px;
+    background: rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.363);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.navbar ul li:hover{
+    transform: scale(1.2);
+    letter-spacing: 2px;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url('images/header-bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tagline h1{
+    color: white;
+    font-size: 100px;
+    width: 400px;
+    margin: 0 100px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.header img{
+    width: 400px;
+    height: 400px;
+    margin: 100px;
+}
+
+
+
+
+.wrapper{
+    background: url('images/bg4.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -70px 100px 50px black;
+    z-index: 100;
+}
+.features{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.features .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    animation: shine 0.5s linear 1 alternate-reverse;
+}
+@keyframes shine {
+    0%{
+    background: linear-gradient(0deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    10%{
+        background: linear-gradient(10deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    20%{
+        background: linear-gradient(20deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    30%{
+        background: linear-gradient(30deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    40%{
+        background: linear-gradient(40deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    50%{
+        background: linear-gradient(50deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    60%{
+        background: linear-gradient(60deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    70%{
+        background: linear-gradient(70deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    80%{
+        background: linear-gradient(80deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    90%{
+        background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+    100%{
+        background: linear-gradient(100deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+}
+
+.features .card h2{
+    color: white;
+    transition: 0.5s;
+    margin: 10px;
+    text-align: center;
+}
+.icon {
+    font-size: 70px;
+    color: #f17538;
+    transition: 0.5s;
+}
+.card:hover .icon{
+    color: rgb(255, 166, 133);
+    transform: scale(1.2);
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.card:hover h2{
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+
+
+
+
+#contacts{
+    background: url('images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0px 100px 200px black ;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px;
+    overflow: hidden;
+}
+#contacts .cicon{
+    color: #f17538;
+    font-size: 30px;
+    width:50px;
+    height: 50px;
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5;
+}
+.cicon:hover{
+    animation: shine 0.5s linear 1 alternate-reverse;
+}
+#contacts a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    display: block;
+}
+#contacts p{
+    transition: 0.5s;
+}
+#contacts a:hover, #contacts p:hover{
+    transform: scale(1.2);
+}
+
+
+
+#services{
+    width: 100%;
+    height: 100vh;
+    background: url('images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0px 100px 200px black ;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .service-box{
+    background: rgba(255, 255, 255,1);
+    width: 250px;
+    height: 380px;   
+    position: relative; 
+}
+.service-box img{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.service-box h3{
+    color: black;
+    position: absolute;
+    top: 200px;
+    margin: 10px;
+}
+.service-box p{
+    position: absolute;
+    top: 250px;
+    margin: 0 10px;
+}
+.service-box a{
+    position: absolute;
+    bottom: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: grey;
+    border: 1px solid grey;
+    padding: 5px;
+    transition: 0.5;
+}
+.service-box a:hover{
+    background-color: grey;
+    color: white;
+}
+
+
+#store{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0px 100px 200px black ;
+}
+.storebtn{
+    position: relative;
+    width:350px;
+    height: 100px;
+    background: linear-gradient(10deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.5) 100%);
+    /* -webkit-box-reflect: below 10px linear-gradient(#0000, #0004); */
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.storebtn a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    transition: 0.5s;
+}
+.storebtn:hover a{
+    transform: translateX(-20px);
+}
+.storebtn:hover{
+    animation: shine 0.5s linear 1 alternate-reverse;
+}
+.storebtn:hover i{
+    transform: translateX(60px);
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    animation: appear 1s linear 1;
+    animation-fill-mode:forwards;
+}
+.storebtn i{
+    font-size: 40px;
+    color: white;
+    transition: 0.5s;
+    position: absolute;
+    right: 80px;
+    opacity: 0;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width:600px) {
+    .tagline h1{
+        font-size: 50px;
+        width: 200px;
+        margin: 0px 50px;
+    }
+    .header .content{
+        flex-direction: column;
+    }
+    .header img{
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+    }
+    .features{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .features .card{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    .icon {
+        font-size: 50px;
+    }
+    .features .card h2{
+        font-size: smaller;
+        text-align: center;
+    }
+    #contacts{
+    box-shadow: inset 0 0px 70px 70px black ;
+    }
+    #contacts a{
+        text-decoration: underline white;
+    }
+    #services{
+    box-shadow: inset 0 0px 40px 40px black ;
+    }
+    .storebtn i{
+        opacity: 1;
+        transform: translateX(70px);
+    }
+    .storebtn a{
+        transform: translateX(-20px);
+    }
+}
+
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(241,117,56,1) 60%);
+    border-radius: 10px;
+}

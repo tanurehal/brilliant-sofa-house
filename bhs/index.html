@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilliant Sofa House</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SWIPER.JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/479ec68b3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo-sm"></div>
+            <ul>
+                <!-- INSERT STORE LINK -->
+                <li><a href="#">Store</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="tagline">
+                <h1>You will get it as you want!</h1>
+            </div>
+            <div class="logo-lg">
+                <img src="images/logo-lg.png" alt="" class="logo-lg">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <div class="features">
+        <div class="card"><i class="fas fa-tags icon"></i><h2>Low Price</h2></div>
+        <div class="card"><i class="far fa-check-circle icon"></i><h2>A1 Quality</h2></div>
+        <div class="card"><i class="fas fa-heart icon"></i><h2>10 Year Guarantee</h2></div>
+    </div>
+    <div class="features">
+        <div class="card"><i class="far fa-gem icon"></i><h2>Unique Designs</h2></div>
+        <div class="card"><i class="fas fa-home icon"></i><h2>Free Home Delivery</h2></div>
+        <div class="card"><i class="fas fa-paint-brush icon"></i><h2>Customized Products</h2></div>
+    </div>
+    </div>
+
+    <div id="services">
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="service-box swiper-slide"><img src="images/custom-sofas.jpg" alt=""><h3>Custom Sofas</h3><p>We'll make your sofa set look just the way you want!</p><a href="tel:+919255955498">Call Us</a></div>
+
+            <div class="service-box swiper-slide"><img src="images/sofa-repair.jpg" alt=""><h3>Sofa Repair</h3><p>Save money by getting your sofa repaired.</p><a href="tel:+919255955498">Call Us</a></div>
+
+            <div class="service-box swiper-slide"><img src="images/govt-contract.jpg" alt=""><h3>Government Contracts</h3><p>We take contracts from government offices too.</p><a href="tel:+919255955498">Call Us</a></div>
+
+            <div class="service-box swiper-slide"><img src="images/bed-back.png" alt=""><h3>Bed-Backs</h3><p>Get stylized bed-backs from us to jazz up your bedroom.</p><a href="tel:+919255955498">Call Us</a></div>
+
+            <div class="service-box swiper-slide"><img src="images/mattress.jpeg" alt=""><h3>Mattressess</h3><p>Sleepwell Mattressess and Spring Mattressess available.</p><a href="tel:+919255955498">Call Us</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div id="store">
+        <div class="storebtn">
+            <!-- INSERT STORE LINK -->
+            <a href="#">Go to Store</a><i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <div class="contact"><i class="fas fa-phone-alt cicon"></i><a href="tel:+919255955498">+91 9255955498</a></div>
+        <div class="contact"><i class="fab fa-whatsapp cicon"></i><a href="https://wa.me/c/917988520427">+91 7988520427</a></div>
+        <div class="contact"><i class="fab fa-facebook-f cicon"></i><a href="https://m.facebook.com/Brilliant-sofa-House-650527412249643/?tsid=0.20572169796866246&source=result">Brilliant Sofa House</a></div>
+        <div class="contact"><i class="fab fa-instagram cicon"></i><a href="https://www.instagram.com/brilliant_sofa_house/?igshid=1er0e9h3vgopr">brilliant_sofa_house</a></div>
+        <div class="contact"><i class="far fa-envelope cicon"></i><a href="mailto:brilliantsofahouse@gmail.com? subject=Hi, Chirag!">brilliantsofahouse@gmail.com</a></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 30,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+</body>
+</html>
